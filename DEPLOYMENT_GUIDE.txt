@@ -1,0 +1,97 @@
+================================================================================
+VALENTYNA BUKOVSKA - PSYCHOLOGY TRAINING WEBSITE
+STATIC HTML/CSS DEPLOYMENT GUIDE
+================================================================================
+
+QUICK START
+-----------
+This website is fully static and ready to deploy. No server setup required.
+
+FILES INCLUDED
+--------------
+✓ index.html - Complete website (single file)
+✓ assets/index-*.css - All styling
+✓ assets/index-*.js - All functionality
+✓ valentyna-*.jpg - Professional photos (4 images)
+✓ README.md - Detailed deployment instructions
+
+DEPLOYMENT OPTIONS (Choose One)
+--------------------------------
+
+1. EASIEST - Netlify (Recommended for beginners)
+   - Go to netlify.com
+   - Sign up (free)
+   - Click "Add new site" → "Deploy manually"
+   - Drag and drop this entire folder
+   - Done! Your site is live with a free domain
+   - Upgrade to custom domain later if needed
+
+2. FREE - GitHub Pages
+   - Create GitHub account (if needed)
+   - Create new repository
+   - Upload all files
+   - Enable GitHub Pages in Settings
+   - Live at yourusername.github.io/valentyna-bukovska
+
+3. TRADITIONAL - Shared Web Hosting
+   - Purchase hosting (GoDaddy, Bluehost, etc.)
+   - Use FTP client (FileZilla is free)
+   - Connect to hosting
+   - Upload all files to public_html folder
+   - Visit your domain
+
+4. ADVANCED - Vercel
+   - Go to vercel.com
+   - Sign up with GitHub
+   - Import this project
+   - Auto-deployed with custom domain option
+
+TESTING LOCALLY (Before Upload)
+--------------------------------
+1. Download all files to your computer
+2. Open index.html in your web browser
+3. Test all navigation and links
+4. Check on mobile device (responsive design)
+
+CUSTOM DOMAIN
+--------------
+After deploying on free platform:
+1. Register domain (GoDaddy, Namecheap, etc.)
+2. Point domain to hosting platform
+3. Update DNS settings (instructions provided by platform)
+4. Usually takes 24-48 hours to propagate
+
+IMPORTANT NOTES
+---------------
+✓ All files must stay together in same folder
+✓ Keep assets/ folder with CSS and JS files
+✓ Keep all image files (valentyna-*.jpg)
+✓ index.html must be in root folder
+✓ No server-side processing needed
+✓ Works on all modern browsers
+✓ Mobile responsive
+
+TROUBLESHOOTING
+---------------
+Issue: Pages not loading
+Solution: Ensure all files are uploaded, check file permissions
+
+Issue: Images not showing
+Solution: Verify image files are uploaded, check file names match
+
+Issue: Styling looks wrong
+Solution: Clear browser cache (Ctrl+Shift+Delete), reload page
+
+Issue: Links not working
+Solution: All links are internal - should work if files are together
+
+SUPPORT & UPDATES
+-----------------
+Website Contact:
+- Email: Vbukavskaya@gmail.com
+- Phone: +447760164058
+- LinkedIn: https://www.linkedin.com/in/valentyna-bukovska-821105241/
+
+================================================================================
+Ready to deploy! Choose your platform and upload these files.
+================================================================================
