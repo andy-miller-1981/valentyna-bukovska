@@ -3,6 +3,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Link } from "wouter";
 import { ArrowRight, Brain, Users, Target, Award } from "lucide-react";
 
+const asset = (path: string) =>
+  `${import.meta.env.BASE_URL.replace(/\/$/, "")}/${path.replace(/^\//, "")}`;
+
 export default function Home() {
   const features = [
     {
@@ -74,9 +77,9 @@ export default function Home() {
             </div>
             <div className="relative hidden lg:block">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src="/valentyna-professional.jpg" 
-                  alt="Valentyna Bukovska - Qualified Psychologist" 
+                <img
+                  src={asset("/valentyna-professional.jpg")}
+                  alt="Valentyna Bukovska - Qualified Psychologist"
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -166,9 +169,9 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="order-2 lg:order-1">
               <div className="rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src="/valentyna-working.jpg" 
-                  alt="Valentyna Bukovska - Psychology Training Specialist" 
+                <img
+                  src={asset("/valentyna-working.jpg")}
+                  alt="Valentyna Bukovska - Psychology Training Specialist"
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -208,17 +211,17 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="overflow-hidden rounded-lg">
-              <img 
-                src="/valentyna-radio.jpg" 
-                alt="Valentyna Bukovska on Beat Route Radio" 
+              <img
+                src={asset("/valentyna-radio.jpg")}
+                alt="Valentyna Bukovska on Beat Route Radio"
                 className="w-full h-auto object-cover"
               />
             </div>
             
             <div className="overflow-hidden rounded-lg">
-              <img 
-                src="/valentyna-event.jpg" 
-                alt="Valentyna Bukovska at Business Event" 
+              <img
+                src={asset("/valentyna-event.jpg")}
+                alt="Valentyna Bukovska at Business Event"
                 className="w-full h-auto object-cover"
               />
             </div>

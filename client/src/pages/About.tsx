@@ -3,6 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Award, BookOpen, Users, ArrowRight } from "lucide-react";
 
+const asset = (path: string) =>
+  `${import.meta.env.BASE_URL.replace(/\/$/, "")}/${path.replace(/^\//, "")}`;
+
 export default function About() {
   return (
     <div className="flex flex-col">
@@ -28,9 +31,9 @@ export default function About() {
             <div className="lg:col-span-1">
               <div className="sticky top-24">
                 <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
-                  <img 
-                    src="/valentyna-professional.jpg" 
-                    alt="Valentyna Bukovska - Qualified Psychologist" 
+                  <img
+                    src={asset("/valentyna-professional.jpg")}
+                    alt="Valentyna Bukovska - Qualified Psychologist"
                     className="w-full h-full object-cover"
                   />
                 </div>
