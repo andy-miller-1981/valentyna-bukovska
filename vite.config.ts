@@ -7,8 +7,11 @@ import { defineConfig } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
+const repoBase = process.env.GITHUB_REPOSITORY?.split("/")[1];
+const basePath = process.env.VITE_BASE_PATH ?? (repoBase ? `/${repoBase}/` : "/");
 
 export default defineConfig({
+  base: basePath,
   plugins,
   resolve: {
     alias: {
